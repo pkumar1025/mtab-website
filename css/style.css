@@ -24,7 +24,7 @@ code {
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap');
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     margin: 0;
     padding: 0;
 }
@@ -101,7 +101,7 @@ nav {
     font-size: 5em; /* Increase font size for the title */
     font-weight: bold;
     margin-bottom: 20px;
-    color: #305468; /* Set text color to white */
+    color: #00263a; /* Set text color to white */
 }
 
 .landing-content p {
