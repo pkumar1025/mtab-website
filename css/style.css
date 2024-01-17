@@ -33,7 +33,7 @@ nav {
 }
 
 .landing-section {
-    background-image: url('img/landing-page-art-2.jpg');
+    background-image: url('../img/landing-page-art-2.jpg');
     background-size: cover;
     background-position: center;
     color: #fff; /* White text color */
