@@ -82,23 +82,23 @@ nav {
 
 /* Vibrant blue overlay */
 .landing-section::before {
-    background-color: rgba(0, 102, 205, 0.7); /* Vibrant blue color with 70% opacity */
+    background-color: rgba(58, 125, 213, 0.7); /* Vibrant blue color with 70% opacity */
 }
 
 /* Silver overlay */
 .landing-section::after {
-    background-color: rgba(175, 180, 189, 0.7); /* Silver color with 70% opacity */
+    background-color: rgba(164, 166, 171, 0.7); /* Silver color with 70% opacity */
 }
 
 .landing-content {
     position: relative;
     z-index: 2; /* Ensure the content is above the overlay */
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .landing-content h1 {
-    font-size: 6em; /* Increase font size for the title */
+    font-size: 5em; /* Increase font size for the title */
     font-weight: bold;
     margin-bottom: 20px;
     color: #305468; /* Set text color to white */
