@@ -57,7 +57,9 @@ nav {
     color: #333; /* Dark text color */
 }
 
+
 .landing-section {
+    position: relative;
     background-image: url('../img/landing-page-art-2.jpg');
     background-size: cover;
     background-position: center;
@@ -67,6 +69,8 @@ nav {
 }
 
 .landing-content {
+    position: relative;
+    z-index: 2; /* Ensure the content is above the overlay */
     max-width: 800px;
     margin: 0 auto;
 }
