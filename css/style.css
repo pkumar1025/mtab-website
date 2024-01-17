@@ -68,45 +68,38 @@ nav {
     padding: 100px 20px;
 }
 
-
 /* Add duotone overlay */
-.landing-section::before,
-.landing-section::after {
+.landing-section {
+    position: relative;
+    background-image: url('../img/landing-page-art-2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* white text color */
+    text-align: center;
+    padding: 30px 20px; /* Adjusted padding to make the height smaller */
+    overflow: hidden; /* Ensure the overlay doesn't overflow */
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+.landing-section::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-/* Vibrant blue overlay */
-.landing-section::before {
-    background-color: rgba(27, 118, 236, 0.7); /* Vibrant blue color with 70% opacity */
-}
-
-/* Silver overlay */
-.landing-section::after {
-    background-color: rgba(0, 0, 0, 0.7); /* Silver color with 70% opacity */
-}
-
-.landing-content {
-    position: relative;
-    z-index: 2; /* Ensure the content is above the overlay */
-    max-width: 600px;
-    margin: 0 auto;
+    background: linear-gradient(rgba(75, 118, 225, 0.5), rgba(1, 46, 91, 0.5)); /* Blue tone overlay */
 }
 
 .landing-content h1 {
-    font-size: 5em; /* Increase font size for the title */
+    font-size: 3em; /* Adjusted font size for the title */
     font-weight: bold;
-    margin-bottom: 20px;
-    color: #ffffff; /* Set text color to white */
+    margin-bottom: 15px;
 }
 
 .landing-content p {
-    font-size: 1.5em; /* Increase font size for the description */
-    margin-bottom: 40px;
+    font-size: 1.2em; /* Decreased font size for the description */
+    margin-bottom: 30px;
 }
 
 .buttons a {
