@@ -63,7 +63,7 @@ nav {
     background-image: url('../img/landing-page-art-2.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff; /* white text color */
+    color: #333; /* black text color */
     text-align: center;
     padding: 100px 20px;
 }
@@ -96,11 +96,17 @@ nav {
     margin: 0 auto;
 }
 
-.landing-content h1,
-.landing-content p {
-    color: #fff; /* Set text color to white for better visibility on duotone */
+.landing-content h1 {
+    font-size: 4em; /* Increase font size for the title */
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
+.landing-content p {
+    font-size: 1.5em; /* Increase font size for the description */
+    margin-bottom: 40px;
+    color: #fff; /* Set text color to white for better visibility on duotone */
+}
 
 .apply-button,
 .contact-button {
