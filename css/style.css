@@ -57,24 +57,12 @@ nav {
     color: #333; /* Dark text color */
 }
 
-
 .landing-section {
     position: relative;
     background-image: url('../img/landing-page-art-2.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff; /* white text color */
-    text-align: center;
-    padding: 100px 20px;
-}
-
-/* Add duotone overlay */
-.landing-section {
-    position: relative;
-    background-image: url('../img/landing-page-art-2.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff; /* white text color */
+    color: #fff; /* Set text color to white */
     text-align: center;
     padding: 30px 20px; /* Adjusted padding to make the height smaller */
     overflow: hidden; /* Ensure the overlay doesn't overflow */
@@ -88,18 +76,28 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(75, 118, 225, 0.5), rgba(1, 46, 91, 0.5)); /* Blue tone overlay */
+    background: rgba(17, 29, 42, 0.7); /* Dark blue translucent overlay */
+    z-index: 1; /* Ensure the overlay is below the text */
+}
+
+.landing-content {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the overlay */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .landing-content h1 {
     font-size: 3em; /* Adjusted font size for the title */
     font-weight: bold;
     margin-bottom: 15px;
+    color: #fff; /* Set text color to white */
 }
 
 .landing-content p {
-    font-size: 1.2em; /* Decreased font size for the description */
+    font-size: 1.1em; /* Decreased font size for the description */
     margin-bottom: 30px;
+    color: #fff; /* Set text color to white */
 }
 
 .buttons a {
@@ -109,6 +107,13 @@ nav {
 .apply-button,
 .contact-button {
     background-color: #000; /* Sharp black background color for buttons */
+    border: none; /* Remove button border */
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff; /* Set text color to white */
 }
 
 .apply-button:hover,
@@ -116,7 +121,6 @@ nav {
     background-color: #fff; /* White background color on hover for buttons */
     color: #000; /* Set text color to black on hover for buttons */
 }
-
 
 .main-section {
     /* Additional styling for the main content section */
