@@ -14,13 +14,7 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'IBM Plex Mono';
-    src: url('path/to/ibm-plex-mono-regular.woff2') format('woff2'),
-         url('path/to/ibm-plex-mono-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 code {
     font-family: 'IBM Plex Mono', monospace;
@@ -67,7 +61,7 @@ nav {
     background-image: url('../img/landing-page-art-2.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff; /* White text color */
+    color: #333; /* black text color */
     text-align: center;
     padding: 100px 20px;
 }
