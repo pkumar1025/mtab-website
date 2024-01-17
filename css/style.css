@@ -14,9 +14,24 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('path/to/ibm-plex-mono-regular.woff2') format('woff2'),
+         url('path/to/ibm-plex-mono-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+code {
+    font-family: 'IBM Plex Mono', monospace;
+    /* Additional styles for code elements */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Albert Sans', sans-serif;
+    #font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
