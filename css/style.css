@@ -24,14 +24,14 @@ code {
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap');
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
     background-color: #fff; /* Bright white background */
-    padding: 10px 20px;
+    padding: 20px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -39,6 +39,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
+    font-size: 20px;
 }
 
 .logo {
@@ -76,13 +78,15 @@ nav {
 .logo a {
     text-decoration: none;
     color: #333; /* Dark text color */
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .nav-links a {
     margin-left: 20px;
     text-decoration: none;
     color: #333; /* Dark text color */
+    font-weight: bold;
 }
 
 .landing-section {
@@ -92,11 +96,10 @@ nav {
     background-position: center;
     color: #fff; /* Set text color to white */
     text-align: center;
-    padding: 30px 20px; /* Adjusted padding to make the height smaller */
+    padding: 80px 60px; /* Adjusted padding to make the landing image bigger */
     overflow: hidden; /* Ensure the overlay doesn't overflow */
     box-sizing: border-box; /* Include padding in the height calculation */
 }
-
 
 .landing-content h1::before {
     content: "";
@@ -105,30 +108,31 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(17, 29, 42, 0.7); /* Dark blue translucent overlay */
+    background: rgba(255, 255, 255, 0.739); /* Dark blue translucent overlay */
     z-index: -1;
-    border-radius: 25px; /* Optional: Add border-radius for a rounded effect */
+    border-radius: 40px; /* Optional: Add border-radius for a rounded effect */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adjust the box-shadow as needed */
 }
 
 .landing-content {
     position: relative;
     z-index: 2; /* Ensure the text is above the overlay */
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .landing-content h1 {
-    font-size: 3em; /* Adjusted font size for the title */
+    font-size: 3.1em; /* Adjusted font size for the title */
     font-weight: bold;
     margin-bottom: 15px;
-    color: #fff; /* Set text color to white */
+    color: #000000; /* Set text color to white */
 }
 
 .landing-content p {
     font-size: 1.1em; /* Decreased font size for the description */
     margin-bottom: 30px;
-    color: #fff; /* Set text color to white */
+    color: #000000; /* Set text color to white */
 }
 
 .buttons a {
@@ -150,11 +154,13 @@ nav {
 .apply-button:hover,
 .contact-button:hover {
     background-color: #fff; /* White background color on hover for buttons */
-    color: #000; /* Set text color to black on hover for buttons */
+    color: #001571; /* Set text color to black on hover for buttons */
 }
 
 .main-section {
     /* Additional styling for the main content section */
+    padding: 50px; /* Adjust the padding as needed for the desired space */
+    background-color: #f0f0f0; /* Optional background color for the bottom section */
 }
 
 footer {
