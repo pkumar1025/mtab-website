@@ -63,6 +63,16 @@ nav {
     background-image: url('../img/landing-page-art-2.jpg');
     background-size: cover;
     background-position: center;
+    color: #fff; /* white text color */
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.landing-section {
+    position: relative;
+    background-image: url('../img/landing-page-art-2.jpg');
+    background-size: cover;
+    background-position: center;
     color: #333; /* black text color */
     text-align: center;
     padding: 100px 20px;
@@ -99,14 +109,8 @@ nav {
 .landing-content h1,
 .landing-content p {
     color: #fff; /* Set text color to white for better visibility on duotone */
-    font-size: 1.2em;
-    margin-bottom: 40px;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-}
 
 .apply-button,
 .contact-button {
