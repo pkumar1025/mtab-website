@@ -68,16 +68,6 @@ nav {
     padding: 100px 20px;
 }
 
-.landing-section {
-    position: relative;
-    background-image: url('../img/landing-page-art-2.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #333; /* black text color */
-    text-align: center;
-    padding: 100px 20px;
-}
-
 /* Add duotone overlay */
 .landing-section::before,
 .landing-section::after {
