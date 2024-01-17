@@ -42,7 +42,35 @@ nav {
 }
 
 .logo {
-    font-weight: bold;
+    display: flex;
+    align-items: center; /* Align items vertically in the logo container */
+}
+
+
+.logo img {
+    width: 40px; /* Adjust the width of the logo */
+    margin-right: 10px; /* Add margin between logo and text */
+}
+
+/* Add a class for the spinning and shining effect */
+.logo img:hover {
+    animation: spinAndShine 1s forwards; /* Animation duration and fill-mode */
+}
+
+/* Define the spinAndShine animation */
+@keyframes spinAndShine {
+    0% {
+        transform: rotateY(0deg) scale(1);
+        filter: brightness(1);
+    }
+    50% {
+        transform: rotateY(180deg) scale(1.2); /* Rotate 180 degrees horizontally and scale up */
+        filter: brightness(1.5); /* Increase brightness */
+    }
+    100% {
+        transform: rotateY(360deg) scale(1);
+        filter: brightness(1);
+    }
 }
 
 .logo a {
@@ -69,15 +97,18 @@ nav {
     box-sizing: border-box; /* Include padding in the height calculation */
 }
 
-.landing-section::before {
-    content: '';
+
+.landing-content h1::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(17, 29, 42, 0.7); /* Dark blue translucent overlay */
-    z-index: 1; /* Ensure the overlay is below the text */
+    z-index: -1;
+    border-radius: 25px; /* Optional: Add border-radius for a rounded effect */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adjust the box-shadow as needed */
 }
 
 .landing-content {
