@@ -82,12 +82,12 @@ nav {
 
 /* Vibrant blue overlay */
 .landing-section::before {
-    background-color: rgba(0, 128, 255, 0.7); /* Vibrant blue color with 70% opacity */
+    background-color: rgba(0, 102, 205, 0.7); /* Vibrant blue color with 70% opacity */
 }
 
 /* Silver overlay */
 .landing-section::after {
-    background-color: rgba(192, 192, 192, 0.7); /* Silver color with 70% opacity */
+    background-color: rgba(175, 180, 189, 0.7); /* Silver color with 70% opacity */
 }
 
 .landing-content {
