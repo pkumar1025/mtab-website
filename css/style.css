@@ -24,7 +24,7 @@ code {
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap');
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -104,6 +104,18 @@ a:hover {
     overflow: hidden; /* Ensure the overlay doesn't overflow */
     box-sizing: border-box; /* Include padding in the height calculation */
     min-height: 500px;
+    transition: background-color 0.5s ease; /* Smooth transition for background color change */
+    animation: shine 3s infinite alternate; /* Shiny effect animation */
+}
+
+/* Define the shine animation */
+@keyframes shine {
+    0% {
+        background-color: rgba(255, 255, 255, 0.5); /* Initial shine color */
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.9); /* Final shine color */
+    }
 }
 
 .landing-content h1::before {
