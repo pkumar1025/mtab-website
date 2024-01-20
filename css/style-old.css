@@ -24,15 +24,14 @@ code {
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap');
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ecf1f84d; /* Bright white background */
-    padding: 10px 10px;
+    background-color: #fff; /* Bright white background */
+    padding: 20px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -79,18 +78,117 @@ nav {
     text-decoration: none;
     color: #000000; /* Dark text color */
     font-size: 25px;
-    font-weight: bolder;
+    font-weight: thin;
 }
 
 .nav-links a {
     margin-left: 20px;
     text-decoration: none;
-    color: #004170; /* Dark text color */
-    font-weight: bold;
+    color: #000000; /* Dark text color */
+    font-weight: thin;
 }
 
 a:hover {
-    color: #004170; /* Dark blue color on hover for links */
+    color: #004170; /* Dark red color on hover for links */
+}
+
+.landing-section {
+    position: relative;
+    background-image: url('../img/landing-page-art-2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Set text color to white */
+    text-align: center;
+    padding: 80px 80px; /* Adjusted padding to make the landing image bigger */
+    overflow: hidden; /* Ensure the overlay doesn't overflow */
+    box-sizing: border-box; /* Include padding in the height calculation */
+    min-height: 500px;
+    transition: background-color 0.5s ease; /* Smooth transition for background color change */
+    animation: shine 3s infinite alternate; /* Shiny effect animation */
+}
+
+.interactive-landing {
+    position: relative;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.landing-image {
+    background-image: url('../img/landing-page-art-2.jpg');
+    background-size: contain;
+    background-position: right;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: background-color 0.5s ease;
+    animation: shine 3s infinite alternate;
+}
+
+/* Define the shine animation */
+@keyframes shine {
+    0% {
+        background-color: rgba(65, 117, 168, 0.5);
+    }
+    100% {
+        background-color: rgba(116, 43, 43, 0.9);
+    }
+}
+
+.landing-content h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.739); /* Dark blue translucent overlay */
+    z-index: -1;
+    border-radius: 40px; /* Optional: Add border-radius for a rounded effect */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adjust the box-shadow as needed */
+}
+
+.landing-content {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the overlay */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.landing-content h1 {
+    font-size: 3.1em; /* Adjusted font size for the title */
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000000; /* Set text color to white */
+}
+
+@keyframes rotateCarousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Adjust the percentage based on the number of images in the carousel */
+    }
+}
+
+.landing-content:hover {
+    border-radius: 40px; /* Optional: Add border-radius for a rounded effect */
+    animation: shineOnHover 1.5s forwards; /* Adjust duration and other properties as needed */
+}
+
+@keyframes shineOnHover {
+    0% {
+        background-color: rgba(255, 255, 255, 1); /* Initial shine color */
+    }
+    100% {
+        background-color: rgba(162, 202, 242, 0.5); /* Final shine color */
+    }
+}
+
+.landing-content p {
+    font-size: 1.1em; /* Decreased font size for the description */
+    margin-bottom: 30px;
+    color: #000000; /* Set text color to white */
 }
 
 .buttons a {
@@ -111,7 +209,7 @@ a:hover {
 
 .apply-button:hover,
 .contact-button:hover {
-    background-color: #ececec; /* White background color on hover for buttons */
+    background-color: #fff; /* White background color on hover for buttons */
     color: #001571; /* Set text color to black on hover for buttons */
 }
 
@@ -137,6 +235,18 @@ section {
     gap: 20px;
 }
 
+section h2 {
+    max-width: 100%; /* Adjusted max-width to allow responsiveness */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000; /* Light blue background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #F0F8FF; /* Orange-red title color */
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em; /* Increased font size for chunky title */
+}
 
 section p {
     max-width: 100%;
@@ -145,16 +255,18 @@ section p {
 
 .landing-content {
     margin-bottom: 20px; /* Reduced margin between landing content and banner */
-    text-align: left;
-    margin-left: 100px;
 }
 
-.landing-content h1{
-    font-size: xx-large;
-}
-
-.landing-content h2{
-    font-size: x-large;
+.banner {
+    max-width: 800px;
+    margin: 20px auto; /* Adjusted margin for the banner */
+    background-color: rgb(239, 241, 241);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    text-align: center;
+    font-size: 1em; /* Adjusted font size for the title */
+    padding: 20px;
 }
 
 /* Additional Styling for the Boxes */
