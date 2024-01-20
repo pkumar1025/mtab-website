@@ -89,6 +89,10 @@ nav {
     font-weight: bold;
 }
 
+a:hover {
+    color: #004170; /* Dark red color on hover for links */
+}
+
 .landing-section {
     position: relative;
     background-image: url('../img/landing-page-art-2.jpg');
@@ -96,9 +100,10 @@ nav {
     background-position: center;
     color: #fff; /* Set text color to white */
     text-align: center;
-    padding: 80px 60px; /* Adjusted padding to make the landing image bigger */
+    padding: 80px 80px; /* Adjusted padding to make the landing image bigger */
     overflow: hidden; /* Ensure the overlay doesn't overflow */
     box-sizing: border-box; /* Include padding in the height calculation */
+    min-height: 500px;
 }
 
 .landing-content h1::before {
@@ -159,8 +164,85 @@ nav {
 
 .main-section {
     /* Additional styling for the main content section */
-    padding: 50px; /* Adjust the padding as needed for the desired space */
     background-color: #f0f0f0; /* Optional background color for the bottom section */
+}
+
+.banner {
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    margin-top: 80px;
+    max-width: 800px;
+    color: #000000;
+    text-align: center;
+    font-size: 1em; /* Adjusted font size for the title */
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+section h2 {
+    max-width: 100%; /* Adjusted max-width to allow responsiveness */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000000; /* Light blue background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #F0F8FF; /* Orange-red title color */
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em; /* Increased font size for chunky title */
+}
+
+section p {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.landing-content {
+    margin-bottom: 20px; /* Reduced margin between landing content and banner */
+}
+
+.banner {
+    max-width: 800px;
+    margin: 20px auto; /* Adjusted margin for the banner */
+    background-color: rgb(239, 241, 241);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #000000;
+    text-align: center;
+    font-size: 1em; /* Adjusted font size for the title */
+    padding: 20px;
+}
+
+/* Additional Styling for the Boxes */
+.table-section {
+    flex: 1 1 calc(33.333% - 20px); /* Adjusted width for 3 boxes in a row */
+    max-width: 300px; /* Reduced max-width for the boxes */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px; /* Added margin for spacing between boxes */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Additional Styling for Table */
+.table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .table-section {
+        flex: 1 1 calc(50% - 20px); /* Adjusted width for 2 sections in a row on smaller screens */
+    }
 }
 
 footer {
