@@ -143,6 +143,19 @@ section p {
     margin-bottom: 20px;
 }
 
+.landing-section {
+    background-image: url('../img/qc.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 80px; /* Adjusted padding to make the landing image bigger */
+    overflow: hidden; /* Ensure the overlay doesn't overflow */
+    box-sizing: border-box; /* Include padding in the height calculation */
+    min-height: 500px;
+    transition: background-color 0.5s ease; /* Smooth transition for background color change */
+    animation: shine 3s infinite alternate; /* Shiny effect animation */
+}
+
 .landing-content {
     margin-top: 150px; /* Reduced margin between landing content and banner */
     margin-bottom: 80px; /* Reduced margin between landing content and banner */
