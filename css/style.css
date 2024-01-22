@@ -101,9 +101,8 @@ a:hover {
     color: #fff; /* Set text color to white for buttons */
 }
 
-.apply-button,
-.contact-button {
-    background: linear-gradient(223deg, #05265e, #fafafc); /* when hover over button it has color */
+.nav-apply-button {
+    background: linear-gradient(223deg, #05265e, #fafafc); /*see if there is a radial gradient instead*/
     border-radius: 20px; /* Remove button border */
     display: inline-block;
     padding: 10px 20px;
@@ -112,7 +111,20 @@ a:hover {
     font-weight: bold;
     color: #fff; /* Set text color to white */
 }
+.apply-button,
+.contact-button
+{
+    background-color: #000; /* Sharp black background color for buttons */
+    border: none; /* Remove button border */
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff; /* Set text color to white */
+}
 
+.nav-apply-button:hover,
 .apply-button:hover,
 .contact-button:hover {
     background-color: #ececec; /* White background color on hover for buttons */
