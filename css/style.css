@@ -188,6 +188,12 @@ section p {
 .landing-content h2{
     font-size: x-large;
 }
+.AI-quote {
+    border-radius: 20%;
+    border-style: ridge;
+    border-color: #05265e;
+    border-width: 20px;
+}
 
 /* Additional Styling for the Boxes */
 .table-section {
