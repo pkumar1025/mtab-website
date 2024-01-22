@@ -26,14 +26,17 @@ code {
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 80px;
 }
 
 header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ecf1f84d; /* Bright white background */
+    background-color: rgba(255, 255, 255, 1); /*opuque background*/
     padding: 10px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 nav {
@@ -47,6 +50,7 @@ nav {
 .logo {
     display: flex;
     align-items: center; /* Align items vertically in the logo container */
+
 }
 
 .logo img {
@@ -99,8 +103,8 @@ a:hover {
 
 .apply-button,
 .contact-button {
-    background-color: #000; /* Sharp black background color for buttons */
-    border: none; /* Remove button border */
+    background: linear-gradient(223deg, #05265e, #fafafc); /* when hover over button it has color */
+    border-radius: 20px; /* Remove button border */
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
@@ -205,7 +209,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%;
 }
