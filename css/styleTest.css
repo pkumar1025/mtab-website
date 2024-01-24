@@ -1,0 +1,60 @@
+/* Reset some default styles for list elements */
+ul.sectors {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Style each card */
+  ul.sectors li {
+    width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    background: linear-gradient(to bottom, #fff, #f0f0f0); /* Gradient background */
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for cards */
+  ul.sectors li:hover {
+    transform: scale(1.05);
+    border: 1px solid #3498db; /* Border color on hover */
+  }
+  
+  /* Style the heading within each card */
+  ul.sectors h2 {
+    color: #3498db;
+  }
+  
+  /* Style the paragraph within each card */
+  ul.sectors p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Apply the color scheme from the header and buttons to the cards */
+  ul.sectors li {
+    background: linear-gradient(to bottom, #fff, #f0f0f0); /* Gradient background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul.sectors li:hover {
+    border: 1px solid #004170; /* Border color on hover */
+  }
+  
+  ul.sectors h2 {
+    color: #001056; /* Dark blue color */
+  }
+  
+  ul.sectors p {
+    color: #555; /* Dark gray text color */
+  }
+  
