@@ -52,7 +52,6 @@ nav {
 .logo {
     display: flex;
     align-items: center; /* Align items vertically in the logo container */
-
 }
 
 .logo img {
@@ -190,11 +189,30 @@ section p {
     font-size: x-large;
 }
 .AI-quote {
-    width: 80%;
-    border-style: double;
-    border-color: #05265e;
-    border-width: 20px;
+    background-color: #f5f5f5; /* Set background color to match your website's theme */
+    padding: 40px;
+    text-align: center;
 }
+
+.AI-quote blockquote {
+    font-style: italic;
+    border-left: 4px solid #3498db; /* Set border color to match your website's theme */
+    padding-left: 20px;
+    margin: 0;
+}
+
+.AI-quote p {
+    margin-top: 20px;
+    font-size: 18px; /* Adjust font size to match your website's theme */
+    color: #333; /* Set text color to match your website's theme */
+}
+
+.AI-quote p:last-child {
+    font-size: 16px; /* Adjust font size for the attribution */
+    font-weight: bold;
+    color: #777; /* Set text color for the attribution */
+}
+
 
 /* Additional Styling for the Boxes */
 .table-section {
@@ -232,7 +250,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 /* Reset some default styles for list elements */
 ul.sectors {
     list-style-type: none;
@@ -240,6 +257,7 @@ ul.sectors {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   
   /* Style each card */
@@ -296,4 +314,84 @@ ul.sectors {
   }
   
 
-  
+/* Adjust the styles for the Collaborators section */
+.collaborators {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    padding: 50px;
+    background-color: #f0f0f0; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+.collaborators h2 {
+    font-size: 24px;
+    color: #001056; /* Dark blue color for heading */
+    margin-bottom: 20px;
+}
+
+.collaborators-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Set your preferred max-width for content */
+}
+
+.collaborators-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: center; /* Center the text */
+}
+
+.collaborators-text p {
+    font-size: 16px;
+    color: #555; /* Dark gray text color */
+}
+
+.collaborators-logo {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow logos to wrap to the next row */
+}
+
+.collaborators-logo img {
+    max-width: 120px; /* Set your preferred width for the logos */
+    max-height: 60px; /* Set your preferred height for the logos */
+    margin: 15px; /* Adjust spacing between logos */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.collaborators-logo img:hover {
+    transform: scale(1.2); /* Add a scale effect on hover for a nice interaction */
+    filter: brightness(1.5); /* Increase brightness on hover */
+}
+
+
+/* Adjust the styles for the Recent Highlights section */
+.recent-highlights {
+    background-color: #f0f0f0; /* Light background color */
+    padding: 50px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+.recent-highlights h2 {
+    font-size: 24px;
+    color: #001056; /* Dark blue color for heading */
+    margin-bottom: 20px;
+}
+
+.recent-highlights ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recent-highlights .highlight-item {
+    font-size: 18px;
+    color: #555; /* Dark gray text color */
+    margin-bottom: 15px;
+}

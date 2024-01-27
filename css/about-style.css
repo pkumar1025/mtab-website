@@ -1,13 +1,44 @@
-
-
-body {
-    font-family: 'IBM Plex Mono', 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: #333;
+@font-face {
+    font-family: 'AwesomeFont-Regular';
+    src: url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+         url('../fonts/fontawesome-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
+@font-face {
+    font-family: 'AwesomeFont-Bold';
+    src: url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+         url('../fonts/fontawesome-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+code {
+    font-family: 'IBM Plex Mono', monospace;
+    /* Additional styles for code elements */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-top: 80px;
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 1); /*opuque background*/
+    padding: 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10
+}
 
 nav {
     display: flex;
@@ -15,13 +46,13 @@ nav {
     align-items: center;
     padding: 5px;
     font-size: 20px;
+    z-index: 10;
 }
 
 .logo {
     display: flex;
     align-items: center; /* Align items vertically in the logo container */
 }
-
 
 .logo img {
     width: 40px; /* Adjust the width of the logo */
@@ -51,19 +82,63 @@ nav {
 
 .logo a {
     text-decoration: none;
-    color: #333; /* Dark text color */
+    color: #000000; /* Dark text color */
     font-size: 25px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .nav-links a {
     margin-left: 20px;
     text-decoration: none;
-    color: #333; /* Dark text color */
+    color: #004170; /* Dark text color */
     font-weight: bold;
 }
 
+a:hover {
+    color: #004170; /* Dark blue color on hover for links */
+}
 
+.buttons a {
+    color: #fff; /* Set text color to white for buttons */
+}
+
+.nav-apply-button {
+    background: linear-gradient(223deg, #05265e, #fafafc); /*see if there is a radial gradient instead*/
+    border-radius: 20px; /* Remove button border */
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff; /* Set text color to white */
+}
+.apply-button,
+.contact-button
+{
+    background-color: #000; /* Sharp black background color for buttons */
+    border: none; /* Remove button border */
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff; /* Set text color to white */
+}
+
+.nav-apply-button:hover,
+.apply-button:hover,
+.contact-button:hover {
+    background-color: #ececec; /* White background color on hover for buttons */
+    color: #001571; /* Set text color to black on hover for buttons */
+}
+
+.main-section {
+    /* Additional styling for the main content section */
+    background-color: #f0f0f0; /* Optional background color for the bottom section */
+}
+
+
+/* NEED TO CHANGE UP THE REST OF THIS*/
 h2 {
     max-width: 800px;
     margin: 20px auto;
