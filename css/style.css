@@ -175,27 +175,27 @@ section {
 
 section p {
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .landing-section {
     background-image: url('../img/qc.png');
     background-size: cover;
-    background-position: center;
+    background-position: center 100 px;
     text-align: center;
-    padding: 80px 80px; /* Adjusted padding to make the landing image bigger */
+    padding: 100px 100px; /* Adjusted padding to make the landing image bigger */
     overflow: hidden; /* Ensure the overlay doesn't overflow */
     box-sizing: border-box; /* Include padding in the height calculation */
-    min-height: 500px;
+    min-height: 300px;
     transition: background-color 0.5s ease; /* Smooth transition for background color change */
     animation: shine 3s infinite alternate; /* Shiny effect animation */
 }
 
 .landing-content {
-    margin-top: 150px; /* Reduced margin between landing content and banner */
-    margin-bottom: 80px; /* Reduced margin between landing content and banner */
+    margin-top: -100px; /* Reduced margin between landing content and banner */
+    margin-bottom: 50px; /* Reduced margin between landing content and banner */
     text-align: left;
-    margin-left: 100px;
+    margin-left: 500px;
     align-self: center;
 }
 
